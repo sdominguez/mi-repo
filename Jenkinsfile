@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('Clonar codigo'){
             steps{
-                git clone https://github.com/sdominguez/mi-repo.git
+                git https://github.com/sdominguez/mi-repo.git
             }
         }
     }
