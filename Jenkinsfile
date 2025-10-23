@@ -8,12 +8,12 @@ pipeline{
         }
         stage('Compilar'){
             steps{
-                sh 'echo "Compilando proyecto.."'
+                sh 'npm install'
             }
         }
         stage('Pruebas'){
             steps{
-                sh 'echo "Ejecutando pruebas.."'
+                sh 'npm test'
             }
         }
     }
