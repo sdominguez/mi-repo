@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    tools {
+        nodejs 'nodejs-25'   
+    }
     stages {
         stage('Clonar codigo'){
             steps{
